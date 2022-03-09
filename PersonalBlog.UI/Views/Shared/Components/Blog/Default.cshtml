@@ -1,0 +1,24 @@
+﻿@model List<Blog>
+@{ string culture = CultureInfo.CurrentCulture.Name;}
+
+<section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="title pb-3 mb-5">@localizer["blogs"]</h1>
+    <div class="owl-carousel testimonial-carousel">
+        @foreach (var item in Model)
+        {
+        <div class="text-left">
+            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+            @if (culture == "tr")
+            {
+                <h4>@item.TitleTr</h4>
+                <p class="fs-4 mb-4">@item.DescriptionTR</p>
+            }
+            else
+            {
+                <h4>@item.TitleEn</h4>
+                <p class="fs-4 mb-4">@item.DescriptionEN</p>
+            }
+        </div>
+        }
+    </div>
+</section>

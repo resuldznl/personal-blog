@@ -1,0 +1,27 @@
+﻿@model List<Experience>
+@{ string culture = CultureInfo.CurrentCulture.Name;}
+
+<section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="title pb-3 mb-5">@localizer["experience"]</h1>
+    <div class="border-start border-2 border-light pt-2 ps-5">
+        @foreach (var item in Model)
+        {
+        <div class="position-relative mb-4">
+            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+            @if (culture == "tr")
+            {
+                <h5 class="mb-1">@item.JobTitleTr</h5>
+                <p class="mb-2">@item.Company | <small>@item.StartDate @item.EndDate</small></p>
+                <p>@item.DescriptionTR</p>
+            }
+            else
+            {
+                <h5 class="mb-1">@item.JobTitleEn</h5>
+                <p class="mb-2">@item.Company | <small>@item.StartDate @item.EndDate</small></p>
+                <p>@item.DescriptionEN</p>
+            }
+
+        </div>
+        }
+    </div>
+</section>

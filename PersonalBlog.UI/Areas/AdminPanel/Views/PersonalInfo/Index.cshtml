@@ -1,0 +1,138 @@
+﻿@{
+    Layout = "~/Areas/AdminPanel/Views/Shared/_AdminPanelLayout.cshtml";
+}
+@model UpdatePersonelInformationVM
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">@localizer["personalinfo"]</h4>
+                <form class="forms-sample" asp-route="PersonalInformation" method="post" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="CreateDate" />
+                    <input type="hidden" asp-for="Active" />
+                    <input type="hidden" asp-for="Photo" />
+                    <input type="hidden" asp-for="CVTr" />
+                    <input type="hidden" asp-for="CVEn" />
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["name"]</label>
+                        <input type="text" class="form-control" asp-for="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["surname"]</label>
+                        <input type="text" class="form-control" asp-for="Surname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["jobtitle"] (TR)</label>
+                        <input type="text" class="form-control" asp-for="JobTitleTr">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["jobtitle"] (EN)</label>
+                        <input type="text" class="form-control" asp-for="JobTitleEn">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["degree"] (TR)</label>
+                        <input type="text" class="form-control" asp-for="DegreeTr">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["degree"] (EN)</label>
+                        <input type="text" class="form-control" asp-for="DegreeEn">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["phone"]</label>
+                        <input type="text" class="form-control" asp-for="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["address"]</label>
+                        <input type="text" class="form-control" asp-for="Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["birthday"]</label>
+                        <input type="date" class="form-control" asp-for="Birthday">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["experienceyears"]</label>
+                        <input type="number" min="0" class="form-control" asp-for="Experience">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">@localizer["email"]</label>
+                        <input type="email" class="form-control" asp-for="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">@localizer["aboutme"] (TR)</label>
+                        <input type="text" class="form-control" asp-for="AboutTR">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">@localizer["aboutme"] (EN)</label>
+                        <input type="text" class="form-control" asp-for="AboutEN">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Twitter</label>
+                        <input type="text" class="form-control" asp-for="Twitter">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Facebook</label>
+                        <input type="text" class="form-control" asp-for="Facebook">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">LinkedIn</label>
+                        <input type="text" class="form-control" asp-for="LinkedIn">
+                    </div>
+                    <div class="form-check form-check-flat form-check-primary">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" asp-for="Freelance" value="true"> @localizer["freelance"]
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>@localizer["photo"]</label>
+                        <input type="file" asp-for="PhotoFile" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled>
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary" type="button">@localizer["upload"]</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>CV (TR)</label>
+                        <input type="file" asp-for="CvTRFile" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled>
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary" type="button">@localizer["upload"]</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>CV (EN)</label>
+                        <input type="file" asp-for="CvENFile" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled>
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary" type="button">@localizer["upload"]</button>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">@localizer["save"]</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/jquery/jquery.js"></script>
+<script src="~/AdminPanel/js/jquery-file-upload.js"></script>
+
+<script src="~/AdminPanel/js/file-upload.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+@if (TempData["personalUpdateInfo"] != null)
+{
+    <script type="text/javascript" charset="utf-8">
+    window.onload = function () {
+        swal(`@Html.Raw(TempData["personalUpdateInfo"].ToString())`, {
+                buttons: [false, `@localizer["swalOKbutton"].ToString()`],
+                icon:'info'
+                });
+            }
+    </script>
+}

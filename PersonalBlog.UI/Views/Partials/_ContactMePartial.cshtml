@@ -1,0 +1,53 @@
+﻿@model CreateContactVM
+<section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
+    <h1 class="title pb-3 mb-5">@localizer["contactMe"]</h1>
+    <form asp-action="Index" asp-controller="Home" method="post">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" asp-for="Name">
+                    <label for="name">@localizer["namesurname"]</label>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control border-0 bg-secondary" asp-for="Email">
+                    <label for="email">@localizer["email"]</label>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-secondary" asp-for="Subject">
+                    <label for="subject">@localizer["subject"]</label>
+                    <span asp-validation-for="Subject" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control border-0 bg-secondary" asp-for="Message" style="height: 200px"></textarea>
+                    <label for="message">@localizer["message"]</label>
+                    <span asp-validation-for="Message" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit">@localizer["send"]</button>
+            </div>
+        </div>
+    </form>
+</section>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+@if (TempData["info"] != null)
+{
+    <script type="text/javascript" charset="utf-8">
+    window.onload = function () {
+        swal(`@Html.Raw(TempData["info"].ToString())`, {
+                buttons: [false, `@localizer["swalOKbutton"].ToString()`],
+                icon:'info'
+                });
+            }
+    </script>
+}
+

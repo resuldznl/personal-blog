@@ -1,0 +1,22 @@
+﻿@model List<Skill>
+<section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="title pb-3 mb-5">@localizer["skills"]</h1>
+    <div class="row">
+        <div class="col-sm-12">
+            @foreach (var item in Model)
+            {
+                
+                string color = item.Degree <= 50 ? "bg-warning" : "bg-primary";
+                <div class="skill mb-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-2">@item.SkillName</p>
+                        <p class="mb-2">@item.Degree%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar @color" role="progressbar" aria-valuenow="@item.Degree" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Areas/AdminPanel/Views/Shared/_AdminPanelLayout.cshtml";
+}
+@model CreateBlogVM
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">@localizer["createBlog"]</h4>
+                <form class="forms-sample" asp-route="CreateBlog" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["title"] (TR)</label>
+                        <input type="text" class="form-control" asp-for="TitleTr">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["title"] (EN)</label>
+                        <input type="text" class="form-control" asp-for="TitleEn">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["description"] (TR)</label>
+                        <input type="text" class="form-control" asp-for="DescriptionTR">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">@localizer["description"] (EN)</label>
+                        <input type="text" class="form-control" asp-for="DescriptionEN">
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">@localizer["save"]</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

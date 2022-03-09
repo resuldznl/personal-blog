@@ -1,0 +1,48 @@
+﻿@model PersonalInformation
+@{ string culture = CultureInfo.CurrentCulture.Name;}
+
+<section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="title pb-3 mb-5">@localizer["aboutme"]</h1>
+    @if (culture == "tr")
+    {
+        <p>@Model.AboutTR</p>
+    }
+    else
+    {
+        <p>@Model.AboutEN</p>
+    }
+    <div class="row mb-4">
+        <div class="col-sm-6 py-1">
+            <span class="fw-medium text-primary">@localizer["namesurname"]:</span> @Model.Name @Model.Surname
+        </div>
+        <div class="col-sm-6 py-1">
+            <span class="fw-medium text-primary">@localizer["birthday"]:</span> @Model.Birthday.ToString("dd MMMM yyyy")
+        </div>
+        <div class="col-sm-6 py-1">
+            @if (culture == "tr")
+            {
+                <span class="fw-medium text-primary">@localizer["degree"]:</span> @Model.DegreeTr
+            }
+            else
+            {
+                <span class="fw-medium text-primary">@localizer["degree"]:</span> @Model.DegreeEn
+            }
+        </div>
+        <div class="col-sm-6 py-1">
+            <span class="fw-medium text-primary">@localizer["experienceyears"]:</span> @Model.Experience @localizer["years"]
+        </div>
+        <div class="col-sm-6 py-1">
+            <span class="fw-medium text-primary">@localizer["phone"]:</span> @Model.Phone
+        </div>
+        <div class="col-sm-6 py-1">
+            <span class="fw-medium text-primary">@localizer["email"]:</span> @Model.Email
+        </div>
+        <div class="col-sm-6 py-1">
+            <span class="fw-medium text-primary">@localizer["address"]:</span> @Model.Address
+        </div>
+        <div class="col-sm-6 py-1">
+            <span class="fw-medium text-primary">@localizer["freelance"]:</span> @{string frelance = Model.Freelance == true ? localizer["available"].ToString() : localizer["notavailable"].ToString();} @frelance
+        </div>
+    </div>
+
+</section>

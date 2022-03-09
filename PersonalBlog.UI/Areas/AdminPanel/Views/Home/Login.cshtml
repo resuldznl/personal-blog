@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+@model LoginVM
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/AdminPanel/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form asp-route="Login" method="post" class="form">
+                <br />
+                <div class="form__input-group">
+                    <label for="username">@localizer["username"]</label>
+                    <input type="text" class="form__input" asp-for="Username" id="username" required>
+                </div>
+                <div class="form__input-group">
+                    <label for="pass">@localizer["password"]</label>
+                    <input type="password" class="form__input" asp-for="Password" id="pass" required>
+                </div>
+                <br />
+                <div class="form__input-group">
+                    <button type="submit" class="form__button">@localizer["submit"]</button>
+                </div>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <h1>@localizer["welcome"]</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/AdminPanel/js/login.js"></script>
+    <script src="~/jquery/jquery.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    @if (TempData["loginInfo"] != null)
+    {
+        <script type="text/javascript" charset="utf-8">
+    window.onload = function () {
+        swal(`@Html.Raw(TempData["loginInfo"].ToString())`, {
+                buttons: [false, `@localizer["swalOKbutton"].ToString()`],
+                icon:'info'
+                });
+            }
+        </script>
+    }
+</body>
+</html>

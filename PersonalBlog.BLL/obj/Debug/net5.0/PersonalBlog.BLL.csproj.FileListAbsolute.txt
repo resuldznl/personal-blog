@@ -1,0 +1,17 @@
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\PersonalBlog.BLL.deps.json
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\PersonalBlog.BLL.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\ref\PersonalBlog.BLL.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\PersonalBlog.BLL.pdb
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\PersonalBlog.DAL.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\PersonalBlog.Entities.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\PersonalBlog.DAL.pdb
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\bin\Debug\net5.0\PersonalBlog.Entities.pdb
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.csproj.AssemblyReference.cache
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.AssemblyInfoInputs.cache
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.AssemblyInfo.cs
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.csproj.CopyComplete
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\ref\PersonalBlog.BLL.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.BLL\obj\Debug\net5.0\PersonalBlog.BLL.pdb

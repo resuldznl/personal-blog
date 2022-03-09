@@ -1,0 +1,36 @@
+﻿@model PersonalInformation
+@{ string culture = CultureInfo.CurrentCulture.Name;}
+<div class="col-lg-4 sticky-lg-top vh-100">
+    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
+        <img class="w-100 img-fluid mb-4" src="@Url.Content(Model.Photo)" alt="Image">
+        <h1 class="text-primary mt-2">@Model.Name @Model.Surname</h1>
+        <div class="mb-4" style="height: 22px;">
+            <h4 class="typed-text-output d-inline-block text-light"></h4>
+            @if (culture == "tr")
+            {
+                <div class="typed-text d-none">@Model.JobTitleTr</div>
+            }
+            else
+            {
+                <div class="typed-text d-none">@Model.JobTitleEn</div>
+            }
+        </div>
+        <div class="d-flex justify-content-center mt-auto mb-3">
+            <a class="btn btn-secondary btn-square mx-1" href="@Model.Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-secondary btn-square mx-1" href="@Model.Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-secondary btn-square mx-1" href="@Model.LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-secondary btn-square mx-1" href="@Model.Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="d-flex align-items-end justify-content-between border-top">
+            @if (culture == "tr")
+            {
+                <a asp-action="DownloadCV" asp-controller="Home" asp-route-CVPath="@Model.CVTr" class="btn w-50 border-end">@localizer["downcv"]</a>
+            }
+            else
+            {
+                <a asp-action="DownloadCV" asp-controller="Home" asp-route-CVPath="@Model.CVEn" class="btn w-50 border-end">@localizer["downcv"]</a>
+            }
+            <a href="#contact" class="btn w-50 btn-scroll">@localizer["contactMe"]</a>
+        </div>
+    </div>
+</div>

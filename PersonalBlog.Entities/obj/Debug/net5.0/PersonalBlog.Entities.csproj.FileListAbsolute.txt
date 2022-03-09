@@ -1,0 +1,12 @@
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\bin\Debug\net5.0\PersonalBlog.Entities.deps.json
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\bin\Debug\net5.0\PersonalBlog.Entities.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\bin\Debug\net5.0\ref\PersonalBlog.Entities.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\bin\Debug\net5.0\PersonalBlog.Entities.pdb
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\PersonalBlog.Entities.csproj.AssemblyReference.cache
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\PersonalBlog.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\PersonalBlog.Entities.AssemblyInfoInputs.cache
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\PersonalBlog.Entities.AssemblyInfo.cs
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\PersonalBlog.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\PersonalBlog.Entities.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\ref\PersonalBlog.Entities.dll
+C:\Users\Resul\source\repos\PersonalBlog\PersonalBlog.Entities\obj\Debug\net5.0\PersonalBlog.Entities.pdb
