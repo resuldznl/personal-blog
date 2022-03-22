@@ -7,6 +7,6 @@ namespace PersonalBlog.UI.EmailControl
 {
     public interface IEmail 
     {
-        public Task SendMail();
+        Task SendMail();
     }
 }

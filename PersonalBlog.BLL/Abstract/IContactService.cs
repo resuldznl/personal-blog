@@ -9,8 +9,8 @@ namespace PersonalBlog.BLL.Abstract
 {
     public interface IContactService
     {
-        public Task<bool> CreateContact(Contact contact);
-        public Task<bool> IsThereNewContact();
-        public Task<List<Contact>> GetAllContacts();
+         Task<bool> CreateContact(Contact contact);
+         Task<bool> IsThereNewContact();
+         Task<List<Contact>> GetAllContacts();
     }
 }

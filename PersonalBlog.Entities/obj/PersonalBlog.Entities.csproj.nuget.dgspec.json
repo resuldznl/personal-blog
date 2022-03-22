@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj": {}
+    "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj": {
+    "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj",
         "projectName": "PersonalBlog.Entities",
-        "projectPath": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj",
+        "projectPath": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj",
         "packagesPath": "C:\\Users\\Resul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Resul\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

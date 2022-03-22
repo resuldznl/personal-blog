@@ -11,13 +11,11 @@ namespace PersonalBlog.BLL.Abstract
 {
     public interface ISkillService
     {
-        public Task<List<Skill>> GetSkills();
-        public Task<List<Skill>> GetSkills(Expression<Func<Skill, bool>> filter);
-        public Task<bool> CreateSkill(Skill skill);
-        public Task<bool> UpdateSkill(Skill updateSkill);
-        public Task<Skill> GetSkill(int Id);
-        public Task<bool> ChangeStatus(int Id);
-
-
+         Task<List<Skill>> GetSkills();
+         Task<List<Skill>> GetSkills(Expression<Func<Skill, bool>> filter);
+         Task<bool> CreateSkill(Skill skill);
+         Task<bool> UpdateSkill(Skill updateSkill);
+         Task<Skill> GetSkill(int Id);
+         Task<bool> ChangeStatus(int Id);
     }
 }

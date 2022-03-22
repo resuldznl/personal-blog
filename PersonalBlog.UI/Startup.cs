@@ -65,7 +65,11 @@ namespace PersonalBlog.UI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                app.UseExceptionHandler("/HTTP500");
+            }
+            app.UseStatusCodePagesWithReExecute("/ErrorPage", "?code={0}");
             app.UseStaticFiles();
             app.UseRouting();
             app.UseCookiePolicy();

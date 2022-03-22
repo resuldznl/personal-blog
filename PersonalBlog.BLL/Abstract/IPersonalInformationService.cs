@@ -9,7 +9,7 @@ namespace PersonalBlog.BLL.Abstract
 {
     public interface IPersonalInformationService
     {
-        public Task<PersonalInformation> GetPersonalInformation();
-        public Task<bool> UpdatePersonalInformation(PersonalInformation personalInformation);
+         Task<PersonalInformation> GetPersonalInformation();
+         Task<bool> UpdatePersonalInformation(PersonalInformation personalInformation);
     }
 }

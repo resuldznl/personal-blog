@@ -8,6 +8,6 @@ namespace PersonalBlog.UI.FileControl
 {
     public interface IFileControlService
     {
-        public Task<string> AddFile(IFormFile formFile, string path);
+        Task<string> AddFile(IFormFile formFile, string path);
     }
 }

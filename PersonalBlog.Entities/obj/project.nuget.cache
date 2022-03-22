@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xmUXqnPtGMFkguHy81yPSAPCyIjN4eLSoOuc4oZJx/W/poKrSQAdcxzozv2XovvqybXy/nBdNWM8yKMbLhOecQ==",
+  "dgSpecHash": "31yYcmgAYynvLtJnD69vv0H10IsXupA5KXRzt8u6OLPq+fIjHdXW84nZkVLlPpN2frl9CJHkT/TgMBXy3a82ww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj",
+  "projectFilePath": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.Entities\\PersonalBlog.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Resul\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.12\\microsoft.aspnetcore.http.features.5.0.12.nupkg.sha512",
     "C:\\Users\\Resul\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",

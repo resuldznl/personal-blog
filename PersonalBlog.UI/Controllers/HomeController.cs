@@ -67,6 +67,16 @@ namespace PersonalBlog.UI.Controllers
             }
             return LocalRedirect(returnUrl);
         }
-       
+        [Route("/HTTP500")]
+        public IActionResult HTTP500()
+        {
+            return View();
+        }
+        [Route("/ErrorPage")]
+        public IActionResult ErrorPage(int code)
+        {
+            return View();
+        }
+
     }
 }

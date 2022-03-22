@@ -5811,11 +5811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.BLL\\PersonalBlog.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.BLL\\PersonalBlog.BLL.csproj",
       "projectName": "PersonalBlog.BLL",
-      "projectPath": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.BLL\\PersonalBlog.BLL.csproj",
+      "projectPath": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.BLL\\PersonalBlog.BLL.csproj",
       "packagesPath": "C:\\Users\\Resul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.BLL\\obj\\",
+      "outputPath": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Resul\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5832,8 +5832,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.DAL\\PersonalBlog.DAL.csproj": {
-              "projectPath": "C:\\Users\\Resul\\source\\repos\\PersonalBlog\\PersonalBlog.DAL\\PersonalBlog.DAL.csproj"
+            "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.DAL\\PersonalBlog.DAL.csproj": {
+              "projectPath": "C:\\Users\\Resul\\Desktop\\PersonalBlog\\PersonalBlog.DAL\\PersonalBlog.DAL.csproj"
             }
           }
         }
@@ -5862,7 +5862,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

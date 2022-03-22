@@ -10,11 +10,11 @@ namespace PersonalBlog.BLL.Abstract
 {
     public interface IBlogService
     {
-        public Task<List<Blog>> GetBlogs(Expression<Func<Blog, bool>> filter);
-        public Task<List<Blog>> GetBlogs();
-        public Task<bool> CreateBlog(Blog blog);
-        public Task<Blog> GetBlogById(int id);
-        public Task<bool> UpdateBlog(Blog blog);
-        public Task<bool> ChangeBlogStatus(int id);
+         Task<List<Blog>> GetBlogs(Expression<Func<Blog, bool>> filter);
+         Task<List<Blog>> GetBlogs();
+         Task<bool> CreateBlog(Blog blog);
+         Task<Blog> GetBlogById(int id);
+         Task<bool> UpdateBlog(Blog blog);
+         Task<bool> ChangeBlogStatus(int id);
     }
 }

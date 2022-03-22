@@ -10,11 +10,11 @@ namespace PersonalBlog.BLL.Abstract
 {
     public interface IExperienceService
     {
-        public Task<List<Experience>> GetExperiences(Expression<Func<Experience, bool>> filter);
-        public Task<List<Experience>> GetExperiences();
-        public Task<bool> ChangeStatus(int id);
-        public Task<bool> CreateExperience(Experience experience);
-        public Task<Experience> GetExperienceById(int id);
-        public Task<bool> UpdateExperience(Experience experience);
+         Task<List<Experience>> GetExperiences(Expression<Func<Experience, bool>> filter);
+         Task<List<Experience>> GetExperiences();
+         Task<bool> ChangeStatus(int id);
+         Task<bool> CreateExperience(Experience experience);
+         Task<Experience> GetExperienceById(int id);
+         Task<bool> UpdateExperience(Experience experience);
     }
 }

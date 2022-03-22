@@ -10,8 +10,8 @@ namespace PersonalBlog.BLL.Abstract
 {
     public interface IAdminService
     {
-        public Task<int?> LoginControl(LoginVM loginVM);
-        public Task<Admin> GetAdminById(int id);
-        public Task<bool> UpdateAdmin(Admin admin);
+         Task<int?> LoginControl(LoginVM loginVM);
+         Task<Admin> GetAdminById(int id);
+         Task<bool> UpdateAdmin(Admin admin);
     }
 }
